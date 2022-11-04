@@ -1,0 +1,264 @@
+/* Вначале файла подключаем шрифты с гуглфонтс или другого */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Так можно отменить все отступы по умолчанию сразу для всего
+* {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    background-color: #f1f1f1;
+    color: #140936;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+       /* альтернативная запись короткая для описания шрифтов
+    font: normal 16px 'Roboto', sans-serif;
+       */
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* Изменение ссылок */
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: grey;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 25);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+}
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+
+/* Обращение по классу к определенному элементу внутри для его изменения */
+.info p {
+    color: #4a5354;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.container {
+    /* width: 100%; */
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/* Нарисовали блок с фоном и разлиными видами обводки
+.courses {
+    background: grey;
+    padding: 15px;
+    border: 5px solid black;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    border-top-width: 10px;
+    border-top-color: red;
+    margin: 15px;
+}
+*/
+
+/* Тренировка с блоками и их размещением
+.box-model > div {
+    float: left;
+    background: black;
+    height: 200px;
+    border: 4px solid red;
+    width: 25%;
+    box-sizing: border-box  ;
+}
+*/
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.card {
+    padding: 15px 20px;
+    /* background: red; */
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.list {
+    padding: 0 20px;
+    list-style: none;    
+}
+
+.list li {
+    color: #86898f;
+    padding-bottom: 10px;   
+}
+
+.table {
+    width: 100%;    
+}
+
+.table td {
+    margin-bottom: 10px;
+    color: red;
+}
+
+/* Обращение к элементу через несколько классов может быть не всегда
+удобно из-за появления большого кол-ва кода */
+.card .temp {
+    color: green;
+}
+
+/* Использование псевдоселекторов для выбора конкретного элемента */
+.table th:nth-child(1),
+.table th:nth-child(2),
+.table th:nth-child(3) {
+    color: blue;
+}
+
+.table tr:nth-child(odd) {
+    background: grey;
+}
+
+.link-list {
+list-style: none;    
+padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contact .cont {
+    text-align: center;
+    list-style: none;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: green;
+}
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    color: #140936;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+    }
+
+.row > .form-group:last-child {
+    margin-right: 0;
+}
+
+.info {
+
+}
+
+.btn {
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;    
+}
+
+.btn:hover {
+    opacity: 09;
+    color: grey;
+}
+
+
+/* Тренировка с позиционированием элементов */
+.position {
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+}
+
+.box {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    /* top: 50px; */
+
+    width: 50px;
+    height: 50px;
+    background: red;
+}
